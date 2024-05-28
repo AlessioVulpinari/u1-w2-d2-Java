@@ -33,6 +33,16 @@ public class Rubrica {
 
     }
 
+    public String returnName(int cellNum) {
+        String result = "";
+        for (String contact : this.getContatti().keySet()) {
+            if (this.getContatti().get(contact) == cellNum) {
+                result = contact;
+            }
+        }
+        return result;
+    }
+
     public int returnCellNumber(String name) {
         try {
             return this.getContatti().get(name);
