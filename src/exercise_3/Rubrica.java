@@ -19,8 +19,13 @@ public class Rubrica {
     }
 
     public void addContact(String name, int cellNumber) {
-        this.getContatti().put(name, cellNumber);
-        System.out.println("Contatto: " + name + " aggiunto con successo!");
+        if (!this.getContatti().containsKey(name)) {
+            this.getContatti().put(name, cellNumber);
+            System.out.println("Contatto: " + name + " aggiunto con successo!");
+        } else {
+            System.out.println("Il contatto: " + name + " è già presente!");
+        }
+
     }
 
     public void deleteContact(String name) {

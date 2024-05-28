@@ -5,6 +5,7 @@ public class Main {
         Rubrica rubrica1 = new Rubrica();
 
         rubrica1.addContact("Alessio", 331);
+        rubrica1.addContact("Alessio", 331);
         rubrica1.addContact("Simone", 337000);
         rubrica1.addContact("Federico", 3310000);
 
