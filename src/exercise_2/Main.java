@@ -1,6 +1,7 @@
 package exercise_2;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -21,6 +22,7 @@ public class Main {
             int randomNum = random.nextInt(0, 100);
             listOfRandomNum.add(randomNum);
         }
+        Collections.sort(listOfRandomNum);
         return listOfRandomNum;
     }
 
